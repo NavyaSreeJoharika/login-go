@@ -16,7 +16,7 @@ func main() {
 	fs := http.FileServer(http.Dir("./"))
 	http.Handle("/static/", http.StripPrefix("/static/", fs))
 
-	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
+	http.HandleFunc("/sample", func(w http.ResponseWriter, r *http.Request) {
 		http.ServeFile(w, r, "./sample.html")
 	})
 

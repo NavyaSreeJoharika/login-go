@@ -4,7 +4,7 @@ body {
     align-items: center;
     justify-content: center;
     font-family: sans-serif;
-    line-height: 1.5;
+    line-height: 1;
     min-height: 100vh;
     background: #f3f3f3;
     flex-direction: column;
